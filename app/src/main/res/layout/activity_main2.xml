@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Pokemon"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:id="@+id/textViewNomPokemon"
+            android:textSize="34sp"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/PokemonImage"
+            android:layout_below="@+id/textViewNomPokemon"
+            android:layout_alignParentStart="true"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp">
+
+        <TextView
+            android:text="Points d'attaque :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewAttackP"
+            android:layout_marginStart="46dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Points de défense :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewDefenseP"
+            android:layout_marginEnd="51dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:text="15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewDefensePoints"
+            android:layout_centerVertical="true"
+            android:layout_alignEnd="@+id/textViewDefenseP"
+            android:layout_marginEnd="50dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:text="20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewAttackPoints"
+            android:layout_alignBaseline="@+id/textViewDefensePoints"
+            android:layout_alignBottom="@+id/textViewDefensePoints"
+            android:layout_alignStart="@+id/textViewAttackP"
+            android:layout_marginStart="45dp"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp">
+
+        <TextView
+            android:text="Niveau d'évolution :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewEvolveLvl"
+            android:layout_marginStart="39dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Type :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewType"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="92dp" />
+
+        <TextView
+            android:text="Feu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewTypeValue"
+            android:layout_alignBaseline="@+id/textViewEvolveLvlPoints"
+            android:layout_alignBottom="@+id/textViewEvolveLvlPoints"
+            android:layout_alignEnd="@+id/textViewType"
+            android:layout_alignStart="@+id/textViewType"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewEvolveLvlPoints"
+            android:layout_marginStart="52dp"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/textViewEvolveLvl" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:text="Attaques : "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/attackText"
+            android:textSize="18sp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/attack"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+</LinearLayout>
