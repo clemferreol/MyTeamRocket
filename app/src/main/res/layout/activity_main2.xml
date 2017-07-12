@@ -3,12 +3,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/White">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/PokemonImage"
+            android:adjustViewBounds="false"
+            android:cropToPadding="false"
+            android:layout_marginTop="35dp"
+            android:layout_below="@+id/textViewNomPokemon"
+            android:layout_alignParentStart="true" />
 
         <TextView
             android:text="Pokemon"
@@ -18,17 +30,9 @@
             android:textSize="34sp"
             android:textAlignment="center"
             android:textStyle="normal|bold"
-            android:layout_weight="1" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@mipmap/ic_launcher"
-            android:id="@+id/PokemonImage"
-            android:layout_below="@+id/textViewNomPokemon"
-            android:layout_alignParentStart="true"
-            android:adjustViewBounds="false"
-            android:cropToPadding="false" />
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -123,8 +127,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_height="171dp">
 
         <TextView
             android:text="Attaques : "
